@@ -75,13 +75,14 @@ void free_stack(stack_t **stack)
 }
 
 /**
- * execute_instruction - Parses the line and executes the corresponding opcode function.
+ * execute_instruction - Parses the line and executes
  * @line: The line containing the opcode and, if applicable, arguments.
  * @stack: A pointer to the top of the stack.
  * @line_number: The line number in the file where the opcode appears.
- * @instructions: An array of instruction_t structures representing opcode-function pairs.
+ * @instructions: An array of instruction_t structures
  */
-void execute_instruction(char *line, stack_t **stack, unsigned int line_number, instruction_t *instructions)
+void execute_instruction(char *line, stack_t **stack,
+			 unsigned int line_number, instruction_t *instructions)
 {
 	char *opcode;
 	int i;
