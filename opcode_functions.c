@@ -29,7 +29,7 @@ void push(stack_t **stack, unsigned int line_number)
 /**
  * pall - Prints all the values on the stack.
  * @stack: A pointer to the top of the stack.
- * @line_number: Unused parameter for consistency with opcode function signature.
+ * @line_number: Unused parameter opcode function signature.
  */
 void pall(stack_t **stack, unsigned int line_number)
 {
