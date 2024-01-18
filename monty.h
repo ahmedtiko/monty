@@ -7,7 +7,7 @@
 #include <string.h>
 #include <sys/types.h>
 
-#define NUM_OPCODES 15
+#define NUM_OPCODES 17
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
