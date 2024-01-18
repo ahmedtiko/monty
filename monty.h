@@ -41,14 +41,15 @@ typedef struct instruction_s
 
 /* Function prototypes */
 void push(stack_t **stack, unsigned int line_number);
-void pall(stack_t **stack);
+void pall(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
 /* Utilities Prototypes */
 stack_t *push_stack(stack_t **stack, int value);
 int is_integer(const char *str);
 void initialize_instructions(instruction_t *instructions);
-void pint(stack_t **stack, unsigned int line_number);
 void execute_instruction(char *line, stack_t **stack, unsigned int line_number, instruction_t *instructions);
+void free_stack(stack_t **stack);
 /* Add more function prototypes as needed */
 
 #endif 
