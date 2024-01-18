@@ -86,7 +86,7 @@ void execute_instruction(char *line, stack_t **stack, unsigned int line_number, 
 	char *opcode;
 	int i;
 
-	if (line == NULL || line[0] = '#' || line[0] == '\n')
+	if (line == NULL || line[0] == '#' || line[0] == '\n')
 		return;
 
 	opcode = strtok(line, " \t\n");
