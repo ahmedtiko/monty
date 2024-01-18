@@ -26,7 +26,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr - Prints the string starting at the top of the stack, followed by a new line.
+ * pstr - Prints the string starting at the top of the stack.
  * @stack: A pointer to the top of the stack.
  * @line_number: The line number in the file where the opcode appears.
  */
