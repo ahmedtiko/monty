@@ -7,7 +7,7 @@
 #include <string.h>
 #include <sys/types.h>
 
-#define NUM_OPCODES 11
+#define NUM_OPCODES 15
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -63,4 +63,13 @@ void initialize_instructions(instruction_t *instructions);
 void execute_instruction(char *line, stack_t **stack, unsigned int line_number, instruction_t *instructions);
 void free_stack(stack_t **stack);
 
+/* stack_operations_4 prototypes */
+void pchar(stack_t **stack, unsigned int line_number);
+void pstr(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
+
+/* stack_operations_5 prototypes */
+void stack(stack_t **stack, unsigned int line_number);
+void queue(stack_t **stack, unsigned int line_number);
 #endif 

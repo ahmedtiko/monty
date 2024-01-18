@@ -31,4 +31,12 @@ void initialize_instructions(instruction_t *instructions)
 	instructions[9].f = mul;
 	instructions[10].opcode = "mod";
 	instructions[10].f = mod;
+	instructions[11].opcode = "pchar";
+	instructions[11].f = pchar;
+	instructions[12].opcode = "pstr";
+	instructions[12].f = pstr;
+	instructions[13].opcode = "rotl";
+	instructions[13].f = rotl;
+	instructions[14].opcode = "rotr";
+	instructions[14].f = rotr;
 }
