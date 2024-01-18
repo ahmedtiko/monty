@@ -73,3 +73,35 @@ void free_stack(stack_t **stack)
 
 	*stack = NULL;
 }
+
+/**
+ * execute_instruction - Parses the line and executes the corresponding opcode function.
+ * @line: The line containing the opcode and, if applicable, arguments.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number in the file where the opcode appears.
+ * @instructions: An array of instruction_t structures representing opcode-function pairs.
+ */
+void execute_instruction(char *line, stack_t **stack, unsigned int line_number, instruction_t *instructions)
+{
+	char *opcode;
+	int i;
+
+	opcode = strtok(line, " \n");
+
+	if (!opcode)
+		return; /* ignore empty line */
+
+	for (i = 0; i < NUM_OPCODES; i++)
+	{
+		if (strcmp(opcode, instructions[i].opcode) == 0)
+		{
+			/* Found a matching opcode, execute the corresponding function */
+			instructions[i].f(stack, line_number);
+			return;
+		}
+	}
+
+	/* If no matching opcode is found, print an error message and exit */
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
+	exit(EXIT_FAILURE);
+}

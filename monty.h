@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+#include <sys/types.h>
 
 #define NUM_OPCODES 4
 
@@ -47,7 +48,7 @@ stack_t *push_stack(stack_t **stack, int value);
 int is_integer(const char *str);
 void initialize_instructions(instruction_t *instructions);
 void pint(stack_t **stack, unsigned int line_number);
-
+void execute_instruction(char *line, stack_t **stack, unsigned int line_number, instruction_t *instructions);
 /* Add more function prototypes as needed */
 
 #endif 
