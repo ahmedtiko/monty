@@ -41,7 +41,7 @@ typedef struct instruction_s
 
 /* Function prototypes */
 void push(stack_t **stack, unsigned int line_number);
-void pall(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack);
 void pop(stack_t **stack, unsigned int line_number);
 /* Utilities Prototypes */
 stack_t *push_stack(stack_t **stack, int value);
