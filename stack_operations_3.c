@@ -20,11 +20,11 @@ void sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div - Divides the second top element of the stack by the top element.
+ * div_op - Divides the second top element of the stack by the top element.
  * @stack: A pointer to the top of the stack.
  * @line_number: The line number in the file where the opcode appears.
  */
-void div(stack_t **stack, unsigned int line_number)
+void div_op(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current = *stack;
 

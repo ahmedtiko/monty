@@ -26,7 +26,7 @@ void initialize_instructions(instruction_t *instructions)
 	instructions[7].opcode = "sub";
 	instructions[7].f = sub;
 	instructions[8].opcode = "div";
-	instructions[8].f = div;
+	instructions[8].f = div_op;
 	instructions[9].opcode = "mul";
 	instructions[9].f = mul;
 	instructions[10].opcode = "mod";
