@@ -64,7 +64,7 @@ void mul(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod - Computes the rest of the division of the second top element by the top element.
+ * mod - Computes the rest of the division.
  * @stack: A pointer to the top of the stack.
  * @line_number: The line number in the file where the opcode appears.
  */
