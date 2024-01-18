@@ -17,4 +17,10 @@ void initialize_instructions(instruction_t *instructions)
 	instructions[2].f = pint;
 	instructions[3].opcode = "pop";
 	instructions[3].f = pop;
+	instructions[4].opcode = "swap";
+	instructions[4].f = swap;
+	instructions[5].opcode = "add";
+	instructions[5].f = add;
+	instructions[6].opcode = "nop";
+	instructions[6].f = nop;
 }
