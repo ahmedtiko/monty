@@ -12,7 +12,7 @@ stack_t *push_stack(stack_t **stack, int value)
 
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
-		return NULL;
+		return (NULL);
 
 	new_node->n = value;
 	new_node->prev = NULL;
@@ -39,12 +39,12 @@ stack_t *push_stack(stack_t **stack, int value)
 int is_integer(const char *str)
 {
 	if (!str || *str == '\0')
-		return 0;
+		return (0);
 
 	while (*str)
 	{
 		if (!isdigit(*str) && (*str != '-' || str != 0))
-			return 0;
+			return (0);
 		str++;
 	}
 
